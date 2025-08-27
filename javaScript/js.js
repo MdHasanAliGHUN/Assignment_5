@@ -35,12 +35,12 @@ function handleCall(e) {
 
   hours = hours % 12;
   hours = hours ? hours : 12;
-  const time = `${hours} : ${minutes} : ${seconds}`;
+  const time = `${hours}:${minutes}:${seconds}`;
 
   callhistorybox.innerHTML = `
     <div class="flex justify-between items-center">
       <div>
-        <h1 class="font-semibold text-lg my-1">${title}</h1>
+        <h1 class="font-semibold text-md my-1">${title}</h1>
         <p class="font-semibold text-sm my-1">${hotLineNumber}</p>
       </div>
       <p class="text-xs">${time}</div>
@@ -71,7 +71,7 @@ copyButtons.forEach((btn) => {
     const card = e.target.closest(".bg-white");
     const hotline = card.querySelector(".cart-hotline").innerText;
     navigator.clipboard.writeText(hotline);
-    alert("Copied the text: " + hotline);
+    alert("Number has been copied : " + hotline);
     copyCount.innerText = parseInt(copyCount.innerText) + 1;
   });
 });
