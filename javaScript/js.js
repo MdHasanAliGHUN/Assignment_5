@@ -5,7 +5,7 @@ const heartCount = document.querySelector(".heartCount");
 const heartIcons = document.querySelectorAll(".heartIcon");
 const clearButton = document.getElementById("clearButton");
 
-const copyButtons = document.querySelectorAll("#copyButton");
+const copyButtons = document.querySelectorAll(".copyButton");
 const cartHotline = document.getElementsByClassName("cart-hotline");
 const copyCount = document.getElementById("copyCount");
 
@@ -72,6 +72,6 @@ copyButtons.forEach((btn) => {
     const hotline = card.querySelector(".cart-hotline").innerText;
     navigator.clipboard.writeText(hotline);
     alert("Copied the text: " + hotline);
-    copyCount.innerText = parseInt(copyCount.innerText) + 3;
+    copyCount.innerText = parseInt(copyCount.innerText) + 1;
   });
 });
