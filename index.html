@@ -1,0 +1,474 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Service</title>
+    <!-- TAILWIND CSS CDN ADD -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body class="bg-green-100">
+    <!---------------- HEADER START ----------------->
+    <header class="bg-white">
+      <!---------------- NAVBAR START ----------------->
+      <nav
+        class="container max-w-7xl mx-auto flex items-center justify-between px-4 py-2"
+      >
+        <!-- Logo and Title -->
+        <div class="flex items-center space-x-3">
+          <img
+            class="size-20 object-contain"
+            src="assets/logo-dark.png"
+            alt="logo"
+          />
+          <h1 class="text-xl font-bold text-gray-700">
+            Emergency <br />
+            Service
+          </h1>
+        </div>
+
+        <!-- Right Section -->
+        <div class="flex items-center space-x-4">
+          <!-- Heart -->
+          <div
+            class="flex items-center justify-center space-x-3 px-3 py-1 bg-red-100 text-red-600 rounded-full shadow hover:bg-red-200 transition w-22"
+          >
+            <span class="font-semibold text-center">0</span>
+            <img class="w-5" src="assets/heart.png" alt="heart" />
+          </div>
+
+          <!-- Coin -->
+          <div
+            class="flex items-center justify-center space-x-2 px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full shadow hover:bg-yellow-200 transition w-22"
+          >
+            <span class="font-semibold">100</span>
+            <img class="w-5" src="assets/coin.png" alt="coin" />
+          </div>
+
+          <!-- Copy -->
+          <div
+            class="flex items-center justify-center space-x-2 px-3 py-1 bg-blue-100 text-blue-700 rounded-full shadow hover:bg-blue-200 transition w-22"
+          >
+            <span class="font-semibold">100</span>
+            <span class="text-sm font-medium">Copy</span>
+          </div>
+        </div>
+      </nav>
+      <!-----------BANNER START------------------ -->
+      <section
+        class="flex items-center justify-center bg-custom-gradient py-10 bg-custom-gradient"
+      >
+        <div class="flex flex-col items-center text-center space-y-4 px-6">
+          <img class="w-28" src="assets/logo-dark.png" alt="logo" />
+          <h1 class="text-white text-2xl font-bold">
+            Emergency Service Directory
+          </h1>
+          <p class="text-white">
+            Emergency Service Directory Government Emergency Services at Your
+            Fingertip – A Project by Government of the People’s Republic of
+            Bangladesh
+          </p>
+        </div>
+      </section>
+    </header>
+    <!---------------- MAIN START ----------------->
+    <main id="min-section" class="container max-w-7xl mx-auto px-4 p-6">
+      <!---------------- MAIN SECTION BOXS ----------------->
+      <section class="grid grid-cols-12 gap-5">
+        <!---------------- LEFT SECTION BOXS ----------------->
+        <section class="border col-span-9">
+          <!---------------- CART BOXS ----------------->
+          <div
+            id="cart-boxs"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4"
+          >
+            <!---------------- CART BOX 1----------------->
+            <div
+              class="bg-white shadow-sm rounded-lg p-5 flex flex-col gap-3 justify-between"
+            >
+              <div class="flex justify-between items-center">
+                <img
+                  src="assets/emergency.png"
+                  alt="emergency"
+                  class="w-12 h-12 rounded-md bg-red-100 p-2"
+                />
+                <img
+                  src="assets/heart.png"
+                  alt="heart"
+                  class="w-6 h-6 cursor-pointer"
+                />
+              </div>
+              <!-- Title and Subtitle -->
+              <div>
+                <h1 class="font-bold text-2xl">National Emergency Number</h1>
+                <p class="text-gray-500 text-lg">National Emergency</p>
+                <h1 class="text-2xl font-extrabold mt-3"><span>999</span></h1>
+                <button
+                  class="bg-gray-300 text-gray-900 text-xs px-3 py-2 rounded-full block w-20 mt-4"
+                >
+                  All
+                </button>
+              </div>
+              <!-- Buttons -->
+              <div class="flex justify-between gap-3 w-full mt-2">
+                <button
+                  class="w-1/2 border rounded-lg py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Copy
+                </button>
+                <button
+                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600"
+                >
+                  Call
+                </button>
+              </div>
+            </div>
+            <!---------------- CART BOX 2----------------->
+            <div
+              class="bg-white shadow-sm rounded-lg p-5 flex flex-col gap-3 justify-between"
+            >
+              <div class="flex justify-between items-center">
+                <img
+                  src="assets/police.png"
+                  alt="police"
+                  class="w-12 h-12 rounded-md bg-red-100 p-2"
+                />
+                <img
+                  src="assets/heart.png"
+                  alt="heart"
+                  class="w-6 h-6 cursor-pointer"
+                />
+              </div>
+              <!-- Title and Subtitle -->
+              <div>
+                <h1 class="font-bold text-2xl">Police Helpline Number</h1>
+                <p class="text-gray-500 text-lg">Police</p>
+                <h1 class="text-2xl font-extrabold mt-3"><span>999</span></h1>
+                <button
+                  class="bg-gray-300 text-gray-900 text-xs px-3 py-2 rounded-full block w-20 mt-4"
+                >
+                  Police
+                </button>
+              </div>
+              <!-- Buttons -->
+              <div class="flex justify-between gap-3 w-full mt-2">
+                <button
+                  class="w-1/2 border rounded-lg py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Copy
+                </button>
+                <button
+                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600"
+                >
+                  Call
+                </button>
+              </div>
+            </div>
+            <!---------------- CART BOX 3----------------->
+            <div
+              class="bg-white shadow-sm rounded-lg p-5 flex flex-col gap-3 justify-between"
+            >
+              <div class="flex justify-between items-center">
+                <img
+                  src="assets/fire-service.png"
+                  alt="fire-service"
+                  class="w-12 h-12 rounded-md bg-red-100 p-2"
+                />
+                <img
+                  src="assets/heart.png"
+                  alt="heart"
+                  class="w-6 h-6 cursor-pointer"
+                />
+              </div>
+              <!-- Title and Subtitle -->
+              <div>
+                <h1 class="font-bold text-2xl">Fire Service Number</h1>
+                <p class="text-gray-500 text-lg">Fire Service</p>
+                <h1 class="text-2xl font-extrabold mt-3"><span>999</span></h1>
+                <button
+                  class="bg-gray-300 text-gray-900 text-xs px-3 py-2 rounded-full block w-20 mt-4"
+                >
+                  Fire
+                </button>
+              </div>
+              <!-- Buttons -->
+              <div class="flex justify-between gap-3 w-full mt-2">
+                <button
+                  class="w-1/2 border rounded-lg py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Copy
+                </button>
+                <button
+                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600"
+                >
+                  Call
+                </button>
+              </div>
+            </div>
+            <!---------------- CART BOX 4----------------->
+            <div
+              class="bg-white shadow-sm rounded-lg p-5 flex flex-col gap-3 justify-between"
+            >
+              <div class="flex justify-between items-center">
+                <img
+                  src="assets/ambulance.png"
+                  alt="ambulance"
+                  class="w-12 h-12 rounded-md bg-red-100 p-2"
+                />
+                <img
+                  src="assets/heart.png"
+                  alt="heart"
+                  class="w-6 h-6 cursor-pointer"
+                />
+              </div>
+              <!-- Title and Subtitle -->
+              <div>
+                <h1 class="font-bold text-2xl">Ambulance Service</h1>
+                <p class="text-gray-500 text-lg">Ambulance</p>
+                <h1 class="text-2xl font-extrabold mt-3">
+                  <span>1994-999999</span>
+                </h1>
+                <button
+                  class="bg-gray-300 text-gray-900 text-xs px-3 py-2 rounded-full block w-20 mt-4"
+                >
+                  Health
+                </button>
+              </div>
+              <!-- Buttons -->
+              <div class="flex justify-between gap-3 w-full mt-2">
+                <button
+                  class="w-1/2 border rounded-lg py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Copy
+                </button>
+                <button
+                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600"
+                >
+                  Call
+                </button>
+              </div>
+            </div>
+            <!---------------- CART BOX 5----------------->
+            <div
+              class="bg-white shadow-sm rounded-lg p-5 flex flex-col gap-3 justify-between"
+            >
+              <div class="flex justify-between items-center">
+                <img
+                  src="assets/emergency.png"
+                  alt="ambulance"
+                  class="w-12 h-12 rounded-md bg-red-100 p-2"
+                />
+                <img
+                  src="assets/heart.png"
+                  alt="heart"
+                  class="w-6 h-6 cursor-pointer"
+                />
+              </div>
+              <!-- Title and Subtitle -->
+              <div>
+                <h1 class="font-bold text-2xl">Women & Child Helpline</h1>
+                <p class="text-gray-500 text-lg">Women & Child Helpline</p>
+                <h1 class="text-2xl font-extrabold mt-3">
+                  <span>1994-999999</span>
+                </h1>
+                <button
+                  class="bg-gray-300 text-gray-900 text-xs px-3 py-2 rounded-full block w-20 mt-4"
+                >
+                  Help
+                </button>
+              </div>
+              <!-- Buttons -->
+              <div class="flex justify-between gap-3 w-full mt-2">
+                <button
+                  class="w-1/2 border rounded-lg py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Copy
+                </button>
+                <button
+                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600"
+                >
+                  Call
+                </button>
+              </div>
+            </div>
+            <!---------------- CART BOX 6----------------->
+            <div
+              class="bg-white shadow-sm rounded-lg p-5 flex flex-col gap-3 justify-between"
+            >
+              <div class="flex justify-between items-center">
+                <img
+                  src="assets/emergency.png"
+                  alt="ambulance"
+                  class="w-12 h-12 rounded-md bg-red-100 p-2"
+                />
+                <img
+                  src="assets/heart.png"
+                  alt="heart"
+                  class="w-6 h-6 cursor-pointer"
+                />
+              </div>
+              <!-- Title and Subtitle -->
+              <div>
+                <h1 class="font-bold text-2xl">Anti-Corruption Helpline</h1>
+                <p class="text-gray-500 text-lg">Anti-Corruption</p>
+                <h1 class="text-2xl font-extrabold mt-3">
+                  <span>1994-999999</span>
+                </h1>
+                <button
+                  class="bg-gray-300 text-gray-900 text-xs px-3 py-2 rounded-full block w-20 mt-4"
+                >
+                  Govt
+                </button>
+              </div>
+              <!-- Buttons -->
+              <div class="flex justify-between gap-3 w-full mt-2">
+                <button
+                  class="w-1/2 border rounded-lg py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Copy
+                </button>
+                <button
+                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600"
+                >
+                  Call
+                </button>
+              </div>
+            </div>
+            <!---------------- CART BOX 7----------------->
+            <div
+              class="bg-white shadow-sm rounded-lg p-5 flex flex-col gap-3 justify-between"
+            >
+              <div class="flex justify-between items-center">
+                <img
+                  src="assets/emergency.png"
+                  alt="ambulance"
+                  class="w-12 h-12 rounded-md bg-red-100 p-2"
+                />
+                <img
+                  src="assets/heart.png"
+                  alt="heart"
+                  class="w-6 h-6 cursor-pointer"
+                />
+              </div>
+              <!-- Title and Subtitle -->
+              <div>
+                <h1 class="font-bold text-2xl">Electricity Helpline</h1>
+                <p class="text-gray-500 text-lg">Electricity Outage</p>
+                <h1 class="text-2xl font-extrabold mt-3">
+                  <span>16216</span>
+                </h1>
+                <button
+                  class="bg-gray-300 text-gray-900 text-xs px-3 py-2 rounded-full block w-20 mt-4"
+                >
+                  Govt
+                </button>
+              </div>
+              <!-- Buttons -->
+              <div class="flex justify-between gap-3 w-full mt-2">
+                <button
+                  class="w-1/2 border rounded-lg py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Copy
+                </button>
+                <button
+                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600"
+                >
+                  Call
+                </button>
+              </div>
+            </div>
+            <!---------------- CART BOX 8----------------->
+            <div
+              class="bg-white shadow-sm rounded-lg p-5 flex flex-col gap-3 justify-between"
+            >
+              <div class="flex justify-between items-center">
+                <img
+                  src="assets/brac.png"
+                  alt="ambulance"
+                  class="w-12 h-12 rounded-md bg-red-100 p-2"
+                />
+                <img
+                  src="assets/heart.png"
+                  alt="heart"
+                  class="w-6 h-6 cursor-pointer"
+                />
+              </div>
+              <!-- Title and Subtitle -->
+              <div>
+                <h1 class="font-bold text-2xl">Brac Helpline</h1>
+                <p class="text-gray-500 text-lg">Brac</p>
+                <h1 class="text-2xl font-extrabold mt-3">
+                  <span>16445</span>
+                </h1>
+                <button
+                  class="bg-gray-300 text-gray-900 text-xs px-3 py-2 rounded-full block w-20 mt-4"
+                >
+                  NGO
+                </button>
+              </div>
+              <!-- Buttons -->
+              <div class="flex justify-between gap-3 w-full mt-2">
+                <button
+                  class="w-1/2 border rounded-lg py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  copy
+                </button>
+                <button
+                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600"
+                >
+                  Call
+                </button>
+              </div>
+            </div>
+            <!---------------- CART BOX 9----------------->
+            <div
+              class="bg-white shadow-sm rounded-lg p-5 flex flex-col gap-3 justify-between"
+            >
+              <div class="flex justify-between items-center">
+                <img
+                  src="assets/Bangladesh-Railway.png"
+                  alt="ambulance"
+                  class="w-12 h-12 rounded-md bg-red-100 p-2"
+                />
+                <img
+                  src="assets/heart.png"
+                  alt="heart"
+                  class="w-6 h-6 cursor-pointer"
+                />
+              </div>
+              <!-- Title and Subtitle -->
+              <div>
+                <h1 class="font-bold text-2xl">Bangladesh Railway Helpline</h1>
+                <p class="text-gray-500 text-lg">Bangladesh Railway</p>
+                <h1 class="text-2xl font-extrabold mt-3">
+                  <span>163</span>
+                </h1>
+                <button
+                  class="bg-gray-300 text-gray-900 text-xs px-3 py-2 rounded-full block w-20 mt-4"
+                >
+                  Travel
+                </button>
+              </div>
+              <!-- Buttons -->
+              <div class="flex justify-between gap-3 w-full mt-2">
+                <button
+                  class="w-1/2 border rounded-lg py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  copy
+                </button>
+                <button
+                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600"
+                >
+                  Call
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!---------------- RIGHT SECTION BOXS ----------------->
+        <section class="border col-span-3">right</section>
+      </section>
+    </main>
+    <script src="javaScript/js.js"></script>
+  </body>
+</html>
