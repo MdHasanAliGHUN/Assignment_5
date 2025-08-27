@@ -5,6 +5,10 @@ const heartCount = document.querySelector(".heartCount");
 const heartIcons = document.querySelectorAll(".heartIcon");
 const clearButton = document.getElementById("clearButton");
 
+const copyButtons = document.querySelectorAll("#copyButton");
+const cartHotline = document.getElementsByClassName("cart-hotline");
+const copyCount = document.getElementById("copyCount");
+
 function handleCall(e) {
   let coins = parseInt(coinSpan.innerText);
 
@@ -29,6 +33,8 @@ function handleCall(e) {
   let minutes = now.getMinutes().toString().padStart(2, "0");
   let seconds = now.getSeconds().toString().padStart(2, "0");
 
+  hours = hours % 12;
+  hours = hours ? hours : 12;
   const time = `${hours} : ${minutes} : ${seconds}`;
 
   callhistorybox.innerHTML = `
@@ -37,7 +43,7 @@ function handleCall(e) {
         <h1 class="font-semibold text-lg my-1">${title}</h1>
         <p class="font-semibold text-sm my-1">${hotLineNumber}</p>
       </div>
-      <p class="text-sm">${time}</div>
+      <p class="text-xs">${time}</div>
     </div>
   `;
 
@@ -58,4 +64,14 @@ heartIcons.forEach((icon) =>
 
 clearButton.addEventListener("click", () => {
   callHistoryContainer.innerHTML = "";
+});
+
+copyButtons.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    const card = e.target.closest(".bg-white");
+    const hotline = card.querySelector(".cart-hotline").innerText;
+    navigator.clipboard.writeText(hotline);
+    alert("Copied the text: " + hotline);
+    copyCount.innerText = parseInt(copyCount.innerText) + 3;
+  });
 });
