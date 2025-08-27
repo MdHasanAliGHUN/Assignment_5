@@ -41,7 +41,7 @@
           <div
             class="flex items-center justify-center space-x-2 px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full shadow hover:bg-yellow-200 transition w-22"
           >
-            <span class="font-semibold">100</span>
+            <span id="coin-count" class="font-semibold">100</span>
             <img class="w-5" src="assets/coin.png" alt="coin" />
           </div>
 
@@ -56,7 +56,7 @@
       </nav>
       <!-----------BANNER START------------------ -->
       <section
-        class="flex items-center justify-center bg-custom-gradient py-10 bg-custom-gradient"
+        class="flex items-center justify-center bg-custom-gradient py-20 bg-custom-gradient"
       >
         <div class="flex flex-col items-center text-center space-y-4 px-6">
           <img class="w-28" src="assets/logo-dark.png" alt="logo" />
@@ -72,11 +72,11 @@
       </section>
     </header>
     <!---------------- MAIN START ----------------->
-    <main id="min-section" class="container max-w-7xl mx-auto px-4 p-6">
+    <main id="min-section" class="container max-w-7xl mx-auto px-2 p-6">
       <!---------------- MAIN SECTION BOXS ----------------->
       <section class="grid grid-cols-12 gap-5">
         <!---------------- LEFT SECTION BOXS ----------------->
-        <section class="border col-span-9">
+        <section class="border col-span-12 md:col-span-9">
           <!---------------- CART BOXS ----------------->
           <div
             id="cart-boxs"
@@ -117,7 +117,8 @@
                   Copy
                 </button>
                 <button
-                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600"
+                  id="call-national-emergency"
+                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600 call-btn"
                 >
                   Call
                 </button>
@@ -158,7 +159,7 @@
                   Copy
                 </button>
                 <button
-                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600"
+                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600 call-btn"
                 >
                   Call
                 </button>
@@ -199,7 +200,7 @@
                   Copy
                 </button>
                 <button
-                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600"
+                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600 call-btn"
                 >
                   Call
                 </button>
@@ -242,7 +243,7 @@
                   Copy
                 </button>
                 <button
-                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600"
+                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600 call-btn"
                 >
                   Call
                 </button>
@@ -285,7 +286,7 @@
                   Copy
                 </button>
                 <button
-                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600"
+                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600 call-btn"
                 >
                   Call
                 </button>
@@ -328,7 +329,7 @@
                   Copy
                 </button>
                 <button
-                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600"
+                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600 call-btn"
                 >
                   Call
                 </button>
@@ -371,7 +372,7 @@
                   Copy
                 </button>
                 <button
-                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600"
+                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600 call-btn"
                 >
                   Call
                 </button>
@@ -414,7 +415,7 @@
                   copy
                 </button>
                 <button
-                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600"
+                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600 call-btn"
                 >
                   Call
                 </button>
@@ -457,7 +458,7 @@
                   copy
                 </button>
                 <button
-                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600"
+                  class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600 call-btn"
                 >
                   Call
                 </button>
@@ -466,7 +467,23 @@
           </div>
         </section>
         <!---------------- RIGHT SECTION BOXS ----------------->
-        <section class="border col-span-3">right</section>
+        <section class="border col-span-12 md:col-span-3">
+          <div class="flex justify-between items-center py-3 px-3">
+            <h1 class="font-bold text-xl text-gray-800">Call History</h1>
+            <button
+              class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full shadow-md transition"
+            >
+              Clear All
+            </button>
+          </div>
+
+          <!---------------- CALL HISTORY CONTAINERS ----------------->
+          <div id="call-history-container" class="px-3">
+            <h1>Hello ONe</h1>
+            <h1>Hello ONe</h1>
+            <h1>Hello ONe</h1>
+          </div>
+        </section>
       </section>
     </main>
     <script src="javaScript/js.js"></script>
