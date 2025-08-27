@@ -3,6 +3,7 @@ const callHistoryContainer = document.getElementById("call-history-container");
 const callButtons = document.querySelectorAll(".call-btn");
 const heartCount = document.querySelector(".heartCount");
 const heartIcons = document.querySelectorAll(".heartIcon");
+const clearButton = document.getElementById("clearButton")
 
 function handleCall(e) {
   let coins = parseInt(coinSpan.innerText);
@@ -39,3 +40,8 @@ const increaseHeartCount = () => {
 heartIcons.forEach((icon) =>
   icon.addEventListener("click", increaseHeartCount)
 );
+
+
+clearButton.addEventListener("click", () => {
+  callHistoryContainer.innerHTML = ""
+})
