@@ -33,7 +33,7 @@
           <div
             class="flex items-center justify-center space-x-3 px-3 py-1 bg-red-100 text-red-600 rounded-full shadow hover:bg-red-200 transition w-22"
           >
-            <span class="font-semibold text-center">0</span>
+            <span class="font-semibold text-center heartCount">0</span>
             <img class="w-5" src="assets/heart.png" alt="heart" />
           </div>
 
@@ -82,7 +82,7 @@
             id="cart-boxs"
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4"
           >
-            <!---------------- CART BOX 1----------------->
+            <!---------------- CART BOX 1 ----------------->
             <div
               class="bg-white shadow-sm rounded-lg p-5 flex flex-col gap-3 justify-between"
             >
@@ -95,21 +95,26 @@
                 <img
                   src="assets/heart.png"
                   alt="heart"
-                  class="w-6 h-6 cursor-pointer"
+                  class="w-6 h-6 cursor-pointer heartIcon"
+
                 />
               </div>
-              <!-- Title and Subtitle -->
               <div>
-                <h1 class="font-bold text-2xl">National Emergency Number</h1>
-                <p class="text-gray-500 text-lg">National Emergency</p>
-                <h1 class="text-2xl font-extrabold mt-3"><span>999</span></h1>
+                <h1 class="font-bold text-2xl cart-title">
+                  National Emergency Number
+                </h1>
+                <p class="text-gray-500 text-lg cart-subtitle">
+                  National Emergency
+                </p>
+                <h1 class="text-2xl font-extrabold mt-3">
+                  <span class="cart-hotline">999</span>
+                </h1>
                 <button
                   class="bg-gray-300 text-gray-900 text-xs px-3 py-2 rounded-full block w-20 mt-4"
                 >
                   All
                 </button>
               </div>
-              <!-- Buttons -->
               <div class="flex justify-between gap-3 w-full mt-2">
                 <button
                   class="w-1/2 border rounded-lg py-2 text-gray-700 hover:bg-gray-100"
@@ -117,14 +122,14 @@
                   Copy
                 </button>
                 <button
-                  id="call-national-emergency"
                   class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600 call-btn"
                 >
                   Call
                 </button>
               </div>
             </div>
-            <!---------------- CART BOX 2----------------->
+
+            <!---------------- CART BOX 2 ----------------->
             <div
               class="bg-white shadow-sm rounded-lg p-5 flex flex-col gap-3 justify-between"
             >
@@ -137,21 +142,23 @@
                 <img
                   src="assets/heart.png"
                   alt="heart"
-                  class="w-6 h-6 cursor-pointer"
+                  class="w-6 h-6 cursor-pointer heartIcon"
                 />
               </div>
-              <!-- Title and Subtitle -->
               <div>
-                <h1 class="font-bold text-2xl">Police Helpline Number</h1>
-                <p class="text-gray-500 text-lg">Police</p>
-                <h1 class="text-2xl font-extrabold mt-3"><span>999</span></h1>
+                <h1 class="font-bold text-2xl cart-title">
+                  Police Helpline Number
+                </h1>
+                <p class="text-gray-500 text-lg cart-subtitle">Police</p>
+                <h1 class="text-2xl font-extrabold mt-3">
+                  <span class="cart-hotline">999</span>
+                </h1>
                 <button
                   class="bg-gray-300 text-gray-900 text-xs px-3 py-2 rounded-full block w-20 mt-4"
                 >
                   Police
                 </button>
               </div>
-              <!-- Buttons -->
               <div class="flex justify-between gap-3 w-full mt-2">
                 <button
                   class="w-1/2 border rounded-lg py-2 text-gray-700 hover:bg-gray-100"
@@ -165,7 +172,8 @@
                 </button>
               </div>
             </div>
-            <!---------------- CART BOX 3----------------->
+
+            <!---------------- CART BOX 3 ----------------->
             <div
               class="bg-white shadow-sm rounded-lg p-5 flex flex-col gap-3 justify-between"
             >
@@ -178,21 +186,23 @@
                 <img
                   src="assets/heart.png"
                   alt="heart"
-                  class="w-6 h-6 cursor-pointer"
+                  class="w-6 h-6 cursor-pointer heartIcon"
                 />
               </div>
-              <!-- Title and Subtitle -->
               <div>
-                <h1 class="font-bold text-2xl">Fire Service Number</h1>
-                <p class="text-gray-500 text-lg">Fire Service</p>
-                <h1 class="text-2xl font-extrabold mt-3"><span>999</span></h1>
+                <h1 class="font-bold text-2xl cart-title">
+                  Fire Service Number
+                </h1>
+                <p class="text-gray-500 text-lg cart-subtitle">Fire Service</p>
+                <h1 class="text-2xl font-extrabold mt-3">
+                  <span class="cart-hotline">999</span>
+                </h1>
                 <button
                   class="bg-gray-300 text-gray-900 text-xs px-3 py-2 rounded-full block w-20 mt-4"
                 >
                   Fire
                 </button>
               </div>
-              <!-- Buttons -->
               <div class="flex justify-between gap-3 w-full mt-2">
                 <button
                   class="w-1/2 border rounded-lg py-2 text-gray-700 hover:bg-gray-100"
@@ -206,7 +216,8 @@
                 </button>
               </div>
             </div>
-            <!---------------- CART BOX 4----------------->
+
+            <!---------------- CART BOX 4 ----------------->
             <div
               class="bg-white shadow-sm rounded-lg p-5 flex flex-col gap-3 justify-between"
             >
@@ -219,15 +230,14 @@
                 <img
                   src="assets/heart.png"
                   alt="heart"
-                  class="w-6 h-6 cursor-pointer"
+                  class="w-6 h-6 cursor-pointer heartIcon"
                 />
               </div>
-              <!-- Title and Subtitle -->
               <div>
-                <h1 class="font-bold text-2xl">Ambulance Service</h1>
-                <p class="text-gray-500 text-lg">Ambulance</p>
+                <h1 class="font-bold text-2xl cart-title">Ambulance Service</h1>
+                <p class="text-gray-500 text-lg cart-subtitle">Ambulance</p>
                 <h1 class="text-2xl font-extrabold mt-3">
-                  <span>1994-999999</span>
+                  <span class="cart-hotline">1994-999999</span>
                 </h1>
                 <button
                   class="bg-gray-300 text-gray-900 text-xs px-3 py-2 rounded-full block w-20 mt-4"
@@ -235,7 +245,6 @@
                   Health
                 </button>
               </div>
-              <!-- Buttons -->
               <div class="flex justify-between gap-3 w-full mt-2">
                 <button
                   class="w-1/2 border rounded-lg py-2 text-gray-700 hover:bg-gray-100"
@@ -249,7 +258,8 @@
                 </button>
               </div>
             </div>
-            <!---------------- CART BOX 5----------------->
+
+            <!---------------- CART BOX 5 ----------------->
             <div
               class="bg-white shadow-sm rounded-lg p-5 flex flex-col gap-3 justify-between"
             >
@@ -262,15 +272,18 @@
                 <img
                   src="assets/heart.png"
                   alt="heart"
-                  class="w-6 h-6 cursor-pointer"
+                  class="w-6 h-6 cursor-pointer heartIcon"
                 />
               </div>
-              <!-- Title and Subtitle -->
               <div>
-                <h1 class="font-bold text-2xl">Women & Child Helpline</h1>
-                <p class="text-gray-500 text-lg">Women & Child Helpline</p>
+                <h1 class="font-bold text-2xl cart-title">
+                  Women & Child Helpline
+                </h1>
+                <p class="text-gray-500 text-lg cart-subtitle">
+                  Women & Child Helpline
+                </p>
                 <h1 class="text-2xl font-extrabold mt-3">
-                  <span>1994-999999</span>
+                  <span class="cart-hotline">1994-999999</span>
                 </h1>
                 <button
                   class="bg-gray-300 text-gray-900 text-xs px-3 py-2 rounded-full block w-20 mt-4"
@@ -278,7 +291,6 @@
                   Help
                 </button>
               </div>
-              <!-- Buttons -->
               <div class="flex justify-between gap-3 w-full mt-2">
                 <button
                   class="w-1/2 border rounded-lg py-2 text-gray-700 hover:bg-gray-100"
@@ -292,7 +304,8 @@
                 </button>
               </div>
             </div>
-            <!---------------- CART BOX 6----------------->
+
+            <!---------------- CART BOX 6 ----------------->
             <div
               class="bg-white shadow-sm rounded-lg p-5 flex flex-col gap-3 justify-between"
             >
@@ -305,15 +318,18 @@
                 <img
                   src="assets/heart.png"
                   alt="heart"
-                  class="w-6 h-6 cursor-pointer"
+                  class="w-6 h-6 cursor-pointer heartIcon"
                 />
               </div>
-              <!-- Title and Subtitle -->
               <div>
-                <h1 class="font-bold text-2xl">Anti-Corruption Helpline</h1>
-                <p class="text-gray-500 text-lg">Anti-Corruption</p>
+                <h1 class="font-bold text-2xl cart-title">
+                  Anti-Corruption Helpline
+                </h1>
+                <p class="text-gray-500 text-lg cart-subtitle">
+                  Anti-Corruption
+                </p>
                 <h1 class="text-2xl font-extrabold mt-3">
-                  <span>1994-999999</span>
+                  <span class="cart-hotline">1994-999999</span>
                 </h1>
                 <button
                   class="bg-gray-300 text-gray-900 text-xs px-3 py-2 rounded-full block w-20 mt-4"
@@ -321,7 +337,6 @@
                   Govt
                 </button>
               </div>
-              <!-- Buttons -->
               <div class="flex justify-between gap-3 w-full mt-2">
                 <button
                   class="w-1/2 border rounded-lg py-2 text-gray-700 hover:bg-gray-100"
@@ -335,7 +350,8 @@
                 </button>
               </div>
             </div>
-            <!---------------- CART BOX 7----------------->
+
+            <!---------------- CART BOX 7 ----------------->
             <div
               class="bg-white shadow-sm rounded-lg p-5 flex flex-col gap-3 justify-between"
             >
@@ -348,15 +364,18 @@
                 <img
                   src="assets/heart.png"
                   alt="heart"
-                  class="w-6 h-6 cursor-pointer"
+                  class="w-6 h-6 cursor-pointer heartIcon"
                 />
               </div>
-              <!-- Title and Subtitle -->
               <div>
-                <h1 class="font-bold text-2xl">Electricity Helpline</h1>
-                <p class="text-gray-500 text-lg">Electricity Outage</p>
+                <h1 class="font-bold text-2xl cart-title">
+                  Electricity Helpline
+                </h1>
+                <p class="text-gray-500 text-lg cart-subtitle">
+                  Electricity Outage
+                </p>
                 <h1 class="text-2xl font-extrabold mt-3">
-                  <span>16216</span>
+                  <span class="cart-hotline">16216</span>
                 </h1>
                 <button
                   class="bg-gray-300 text-gray-900 text-xs px-3 py-2 rounded-full block w-20 mt-4"
@@ -364,7 +383,6 @@
                   Govt
                 </button>
               </div>
-              <!-- Buttons -->
               <div class="flex justify-between gap-3 w-full mt-2">
                 <button
                   class="w-1/2 border rounded-lg py-2 text-gray-700 hover:bg-gray-100"
@@ -378,7 +396,8 @@
                 </button>
               </div>
             </div>
-            <!---------------- CART BOX 8----------------->
+
+            <!---------------- CART BOX 8 ----------------->
             <div
               class="bg-white shadow-sm rounded-lg p-5 flex flex-col gap-3 justify-between"
             >
@@ -391,15 +410,14 @@
                 <img
                   src="assets/heart.png"
                   alt="heart"
-                  class="w-6 h-6 cursor-pointer"
+                  class="w-6 h-6 cursor-pointer heartIcon"
                 />
               </div>
-              <!-- Title and Subtitle -->
               <div>
-                <h1 class="font-bold text-2xl">Brac Helpline</h1>
-                <p class="text-gray-500 text-lg">Brac</p>
+                <h1 class="font-bold text-2xl cart-title">Brac Helpline</h1>
+                <p class="text-gray-500 text-lg cart-subtitle">Brac</p>
                 <h1 class="text-2xl font-extrabold mt-3">
-                  <span>16445</span>
+                  <span class="cart-hotline">16445</span>
                 </h1>
                 <button
                   class="bg-gray-300 text-gray-900 text-xs px-3 py-2 rounded-full block w-20 mt-4"
@@ -407,12 +425,11 @@
                   NGO
                 </button>
               </div>
-              <!-- Buttons -->
               <div class="flex justify-between gap-3 w-full mt-2">
                 <button
                   class="w-1/2 border rounded-lg py-2 text-gray-700 hover:bg-gray-100"
                 >
-                  copy
+                  Copy
                 </button>
                 <button
                   class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600 call-btn"
@@ -421,7 +438,8 @@
                 </button>
               </div>
             </div>
-            <!---------------- CART BOX 9----------------->
+
+            <!---------------- CART BOX 9 ----------------->
             <div
               class="bg-white shadow-sm rounded-lg p-5 flex flex-col gap-3 justify-between"
             >
@@ -434,15 +452,18 @@
                 <img
                   src="assets/heart.png"
                   alt="heart"
-                  class="w-6 h-6 cursor-pointer"
+                  class="w-6 h-6 cursor-pointer heartIcon"
                 />
               </div>
-              <!-- Title and Subtitle -->
               <div>
-                <h1 class="font-bold text-2xl">Bangladesh Railway Helpline</h1>
-                <p class="text-gray-500 text-lg">Bangladesh Railway</p>
+                <h1 class="font-bold text-2xl cart-title">
+                  Bangladesh Railway Helpline
+                </h1>
+                <p class="text-gray-500 text-lg cart-subtitle">
+                  Bangladesh Railway
+                </p>
                 <h1 class="text-2xl font-extrabold mt-3">
-                  <span>163</span>
+                  <span class="cart-hotline">163</span>
                 </h1>
                 <button
                   class="bg-gray-300 text-gray-900 text-xs px-3 py-2 rounded-full block w-20 mt-4"
@@ -450,12 +471,11 @@
                   Travel
                 </button>
               </div>
-              <!-- Buttons -->
               <div class="flex justify-between gap-3 w-full mt-2">
                 <button
                   class="w-1/2 border rounded-lg py-2 text-gray-700 hover:bg-gray-100"
                 >
-                  copy
+                  Copy
                 </button>
                 <button
                   class="w-1/2 bg-green-500 text-white rounded-lg py-2 hover:bg-green-600 call-btn"
@@ -468,7 +488,9 @@
         </section>
         <!---------------- RIGHT SECTION BOXS ----------------->
         <section class="border col-span-12 md:col-span-3">
-          <div class="flex justify-between items-center py-3 px-3">
+          <div
+            class="flex flex-wrap justify-between items-center gap-3 py-3 px-3"
+          >
             <h1 class="font-bold text-xl text-gray-800">Call History</h1>
             <button
               class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full shadow-md transition"
@@ -478,11 +500,7 @@
           </div>
 
           <!---------------- CALL HISTORY CONTAINERS ----------------->
-          <div id="call-history-container" class="px-3">
-            <h1>Hello ONe</h1>
-            <h1>Hello ONe</h1>
-            <h1>Hello ONe</h1>
-          </div>
+          <div id="call-history-container" class="px-3"></div>
         </section>
       </section>
     </main>
